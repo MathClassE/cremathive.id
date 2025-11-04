@@ -1,0 +1,17 @@
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cover {
+    max-width: 100%;
+    height: auto;
+}
+
+#home-blob {
+    top: 50%;
+    right: 10%;
+}
