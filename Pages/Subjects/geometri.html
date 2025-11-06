@@ -3,35 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trigonometri - MathSpark</title>
-    <link rel="icon" href="../../Assets/Images/common/fav.png">
+    <title>Geometri | Cremathive by MathSpark</title>
+    <meta name="description" content="CREMATHIVE adalah platform pembelajaran matematika interaktif yang membuat konsep-konsep sulit menjadi menyenangkan dan mudah dipahami. Temukan materi aljabar, geometri, trigonometri, dan statistika dengan ilustrasi menarik dan latihan interaktif.">
+    <meta name="keywords" content="Cremathive, pembelajaran matematika, matematika interaktif, belajar matematika online, geometri, trigonometri, aljabar, statistika, pendidikan">
+    <meta property="og:title" content="CREMATHIVE - Pembelajaran Matematika yang Menyenangkan" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/MathClassE/cremathive.id/refs/heads/main/Assets/Images/geometri/CoverGeo.webp" />
+    <meta name="author" content="CREMATHIVE" />
+    <link rel="website icon" type="image/png" href="../../Assets/Images/geometri/logo.png" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../Assets/CSS/global.css">
-    <link rel="stylesheet" href="../../Assets/CSS/trigono.css">
+    <link rel="stylesheet" href="../../Assets/CSS/geo.css">
 </head>
 <body>
-    <nav class="navbar">
-        <img src="../../Assets/Images/common/logo.webp" alt="Logo" class="logo">
-        <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="trigonometri.html">Trigonometri</a></li>
-            <li><a href="geometri.html">Geometri</a></li>
-            <li><a href="aljabar.html">Aljabar</a></li>
-            <li><a href="statistika.html">Statistika</a></li>
+  <header id="header">
+    <nav class="container">
+      <a href="#home" class="logo">
+        <img src="../../Assets/Images/geometri/logo.webp" alt="logo" width="40">
+      </a>
+      <div class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#belajar" class="nav-link">Belajar</a></li>
+          <li><a href="#pop" class="nav-link">Pop Quiz</a></li>
+          <li><a href="#reference" class="nav-link">Referensi</a></li>
+          <li>
+            <a href="https://www.instagram.com/cremathive.id/" target="_blank" rel="noopener noreferrer" class="nav-link-button">Follow Us</a>
+          </li>
         </ul>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-    <main>
-        <h1>geo</h1>
-        <p>geo adalah cabang matematika yang mempelajari hubungan antara sudut dan sisi segitiga. Fungsi dasar: sin, cos, tan.</p>
-        <img src="../../Assets/Images/trigonometri/triangle.webp" alt="Segitiga Trigonometri">
-        <h2>Contoh: Sin 30° = 0.5</h2>
-        <a href="../../Assets/Data/trigonometri/materi.pdf" download>
-            <img src="../../Assets/Icon/pdf.svg" alt="PDF"> Download Materi PDF
-        </a>
-        <h2>Video Pembelajaran</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        <div class="blob" id="trig-blob"></div>
-    </main>
-    <script src="../../Assets/JS/main.js"></script>
-    <script src="../../Assets/JS/trigono.js"></script>
+  </header>
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="title">
+        <h1>Bidang Ruang Geometri</h1>
+        <p>Mari belajar geometri — memahami dunia lewat bentuk dan ruang!</p>
+      </div>
+      <div class="animate-bub">
+        <!-- img WEBD -->
+        <div class="bu" style="left: 10%; animation-delay: 0s;"><img src="../../Assets/Animate/geometri/group5.webp" width="55"></div>
+        <div class="bu" style="left: 20%; animation-delay: 5s;"><img src="../../Assets/Animate/geometri/group1.webp" width="40"></div>
+        <div class="bu" style="left: 30%; animation-delay: 2s;"><img src="../../Assets/Animate/geometri/group6.webp" width="75"></div>
+        <div class="bu" style="left: 40%; animation-delay: 7.5s;"><img src="../../Assets/Animate/geometri/group2.webp" width="40"></div>
+        <div class="bu" style="left: 50%; animation-delay: 3.5s;"><img src="../../Assets/Animate/geometri/group7.webp" width="65"></div>
+        <div class="bu" style="left: 60%; animation-delay: 3.5s;"><img src="../../Assets/Animate/geometri/group3.webp" width="40"></div>
+        <div class="bu" style="left: 70%; animation-delay: 3.5s;"><img src="../../Assets/Animate/geometri/group8.webp" width="50"></div>
+        <div class="bu" style="left: 90%; animation-delay: 3.5s;"><img src="../../Assets/Animate/geometri/group4.webp" width="40"></div>
+      </div>
+      <div id="pendahuluan">
+        <img src="../../Assets/Images/geometri/ilust4.webp" alt="ilustrasi">
+        <div class="txt">
+          <p>Pernahkah kamu memperhatikan bentuk ubin lantai, jaring laba-laba, atau pola Bintang di langit malam? Semua itu berkaitan dengan geometri! Di sini, kita akan menjelajahi bagaimana titik, garis, sudut, dan bangun dapat membentuk dunia di sekitar kita. Kamu akan belajar mengenali sifat-sifat bentuk datar dan ruang, menghitung luas dan volume, hingga memahami simetri dan transformasi yang membuat desain jadi indah dan teratur. Siap melihat keindahan matematika dalam setiap bentuk di sekitarmu?</p>
+          <a href="#belajar">Mulai Belajar Sekarang!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BELAJAR -->
+    <section id="belajar">
+      <!-- Sejarah, Definisi, Unsur, Grafk, Jenis -->
+      <div class="sejarah">
+        <h1>Kenapa & Dari Mana?</h1>
+        <p>Geometri adalah cabang matematika yang mempelajari bentuk, ukuran, posisi, dan hubungan antar objek di ruang. Kata geometri berasal dari bahasa Yunani, geo yang berarti bumi dan metron yang berarti pengukuran. Awalnya, geometri berkembang di Mesir Kuno ketika masyarakat perlu mengukur ulang tanah setelah banjir Sungai Nil, dari situlah lahir konsep titik, garis, dan bidang yang kita kenal sekarang.</p><br>
+        <p>Dengan konsep geometri, kita dapat memahami dan menghitung berbagai hal di sekitar kita: mulai dari menentukan luas tanah, merancang bangunan, membuat peta, hingga mendesain pola batik dan arsitektur modern.</p><br>
+        <p>Geometri juga menjadi dasar bagi banyak bidang ilmu lain seperti teknik, arsitektur, komputer grafis, robotika, bahkan astronomi. Jadi, dengan memahami asal-usul dan kegunaan geometri, kita bisa melihat bahwa geometri bukan sekadar hitungan bentuk, tetapi bahasa universal untuk memahami ruang dan dunia.</p>
+      </div>
+      <div class="definisi">
+        <h1>Apa itu geometri?</h1>
+          <p>Geometri adalah ilmu yang membahas tentang hubungan antara titik, garis, sudut, bidang dan bangun-bangun ruang.</p><br>
+        <h2>Secara umum, geometri terbagi menjadi dua jenis utama:</h2>
+        <ol>
+          <li>Geometri Datar (2D) yaitu geometri yang mempelajari bangun yang hanya memiliki panjang dan lebar, seperti segitiga, persegi, dan lingkaran.</li>
+          <li>Geometri Ruang (3D) yaitu geometri yang mempelajari bangun yang memiliki panjang, lebar, dan tinggi, seperti kubus, balok, tabung, dan bola.</li>
+        </ol>
+      </div>
+      <div class="unsur">
+        <h2>a. Unsur dan Konsep Dasar Geometri</h2><br>
+        <ol>
+          <ul><strong>Titik</strong></ul>
+          <p>Menunjukkan posisi tanpa ukuran. Dilambangkan dengan huruf kapital (A, B, C).</p>
+          <p>➜ Contoh: lokasi pada peta.</p><br>
+
+          <ul><strong>Garis</strong></ul>
+          <p>Kumpulan titik yang memanjang tanpa batas ke dua arah.</p>
+          <p>➜ Contoh: tepi meja, benang, atau jalan lurus.</p><br>
+
+          <ul><strong>Bidang</strong></ul>
+          <p>Permukaan datar tempat titik dan garis berada.</p>
+          <p>➜ Contoh: permukaan papan tulis.</p><br>
+
+          <ul><strong>Sudut</strong></ul>
+          <p>Terbentuk dari dua garis yang berpotongan di satu titik.</p>
+          <p>➜ Contoh: pojok buku (90°), garis lurus (180°).</p><br>
+
+          <ul><strong>Bangun Datar (2D)</strong></ul>
+          <p>Memiliki panjang dan lebar.</p>
+          <p>➜ Contoh: segitiga, persegi, persegi panjang, lingkaran.</p><br>
+          <img src="../../Assets/Images/geometri/lengkung.webp" alt="bangun ruang sisi lengkung" width="200">
+          <ul><strong>Bangun Ruang (3D)</strong></ul>
+          <p>Memiliki panjang, lebar, dan tinggi.</p>
+          <p>➜ Contoh: kubus, balok, tabung, kerucut, bola.</p><br>
+          <img src="../../Assets/Images/geometri/datar.webp" alt="bangun ruang sisi datar" width="200">
+          <ul><strong>Simetri dan Transformasi</strong></ul>
+          <p>Simetri menunjukkan keseimbangan bentuk, sedangkan transformasi mencakup perubahan posisi (refleksi, translasi, rotasi, dilatasi).</p>
+          <p>➜ Digunakan dalam desain, animasi, dan grafis komputer.</p><br>
+        </ol>
+      </div>
+      <div class="grafik">
+        <p>Geometri bukan sekadar pelajaran tentang bentuk dan ukuran, tetapi juga cara kita memahami dunia di sekitar. Melalui titik, garis, bidang, dan bangun ruang, kita belajar melihat keteraturan dan keindahan dalam setiap pola yang ada di alam maupun hasil karya manusia. Dengan memahami konsep geometri, kita dapat mengaplikasikannya dalam kehidupan sehari-hari — dari desain, arsitektur, hingga teknologi modern. Mari terus menjelajahi geometri dan temukan bagaimana matematika hadir di setiap sudut kehidupan kita.</p><br>
+      </div>
+    </section>
+    <section id="pop">
+      <div class="quiz-info">
+        <h1>Uji Pemahamanmu!</h1>
+        <h2>Saatnya Pop Quiz!!</h2>
+        <p>Seberapa jauh pemahamanmu tentang Bidang Ruang Geometri? Ayo coba kuis seru ini!</p><br>
+        <p>Klik Gambar dibawah ini!</p>
+        <span>klik link berikut jika tetap tidak muncul: </span><a href="https://wayground.com/admin/quiz/60c6283e2cd9e2001b6c59b7/bentuk-geometri-tiga-dimensi-sifat-geometri-bentangan?source=quiz_share" target="_blank">Quiz Geometri</a>
+      </div>
+      <div class="quiz-card" id="bukaKuisBtn">
+        <img src="../../Assets/Images/geometri/ilust5.webp" alt="Quiz Trigonometri" class="quiz-thumbnail">
+      </div>
+      <div id="kuisModal" class="modal-overlay">
+        <div class="modal-content">
+          <span class="close-button" id="tutupKuisBtn">×</span>
+          <iframe 
+            id="frameKuis"
+            src=" " 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <section id="reference">
+      <h1>Sumber Belajar</h1>
+      <p>Berikut adalah sumber pembelajaran tambahan untuk membantu kamu untuk lebih memahami materi ini:</p>
+      <!-- <div class="file">
+            <div class="file-card">
+              <h4>Geomteri</h4>
+              <p>Buku Trigonometri</p>
+              <a href="../../Assets/Data/geometri/geometri.pdf" download class="download-btn">
+                <i class="fas fa-download"></i> Unduh PDF
+              </a>
+            </div>
+        </div> -->
+        <!-- <div class="artikel">
+          <div class="artikel-card">
+            <a href="#" target="_blank">
+              <h4>Geometri</h4>
+              <div class="artikel-meta">November 5, 2022</div>
+              <p>
+               -
+              </p>
+            </a>
+          </div>
+        </div> -->
+        <div class="youtube">
+          <div class="youtube-card">
+            <a href="https://youtube.com/playlist?list=PLN1w_0-sHsku4Ti9_tkUnL47tA3pq4qyy&si=uXUVaBst2EbuyJcc" target="_blank">
+              <img src="https://i.ytimg.com/vi/4LErGCK7Dk4/hqdefault.jpg?sqp=-oaymwExCNACELwBSFryq4qpAyMIARUAAIhCGAHwAQH4AdQGgALgA4oCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLAfBDtDFJC8C6nwoldsi1ihPIK-1A" alt="thumb">
+              <h4>Bangun ruang sisi lengkung</h4>
+            </a>
+          </div>
+          <div class="youtube-card">
+            <a href="https://youtube.com/playlist?list=PLmOc36chIAoj6Z5Qs6wUpO7L6vFyzbUMM&si=_Av3s3RwRWEhDJmH" target="_blank">
+              <img src="https://i.ytimg.com/vi/Pbndst03Gto/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDXJmrLvcDPHt6X9_4-hsVPkTbPDw" alt="thumb">
+              <h4>Dimensi Tiga</h4>
+            </a>
+          </div>
+          <div class="youtube-card">
+            <a href="https://youtube.com/playlist?list=PLovW1TU0Q47znQ0GOi1gtglPS7NZFXLYl&si=bXU5L6uGDLynMf8l" target="_blank">
+              <img src="https://i.ytimg.com/vi/NOsM5iEseMs/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDFAWA5aAPdv4SlLM-yy0PfyZKOCw" alt="thumb">
+              <h4>Bangun Ruang Sisi Datar</h4>
+            </a>
+          </div>
+          <div class="youtube-card">
+            <a href="https://youtu.be/irOKreRz8UY?si=vg2vvPAiUfjNR9UV " target="_blank">
+              <img src="https://i.ytimg.com/vi/irOKreRz8UY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD53fCVWSN-s-kMXX5JjcEtXenkZw" alt="thumb">
+              <h4>(Transformasi Geometri) - Matematika SMK/SMA</h4>
+            </a>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <p> &#169; Grafik Fungsi Trigonometri | MathSpark by CREMATHIVE</p>
+    <div class="sosial">
+      <a href="https://www.instagram.com/cremathive.id/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:cremathive.mce4@gmail.com"><i class="fas fa-envelope"></i> </a>
+    </div>
+  </footer>
+  <script src="../../Assets/JS/main.js"></script>
+  <script src="../../Assets/JS/trigono.js"></script>
 </body>
 </html>

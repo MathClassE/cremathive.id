@@ -1,0 +1,13 @@
+:root{
+  --prim-font: 'Baloo 2', sans-serif;
+  --sec-font: 'Poppins', sans-serif;
+  --dark: #0B0017;
+  --light: #f5f4f5;
+  --prim-color: #FF3B9D;
+  --sec-color: #662E9B;
+  --ac-color: #F66EB2;
+  --txt-col: #494949;
+  --txt-norm: #0A1045;
+  --wh: #ffffff;
+  --bc: #000000;
+}
