@@ -645,9 +645,10 @@ footer p{color: inherit;}
   }
 
   #home .title h1{
-    font-size: 2rem;
-    text-align: center;
-  }
+      font-size: 2rem;
+      text-align: center;
+    }
+  #home .title p{text-align: center;}
 
   #home #pendahuluan{
     flex-direction: column;
