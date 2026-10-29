@@ -39,7 +39,7 @@
 @media (prefers-color-scheme: dark) { .circle-page a { color: var(--ac-color); } }
 
 /* Navigasi: memanfaatkan struktur header global, dengan warna dan menu mobile halaman ini. */
-.circle-page #header { background: var(--glass); border-bottom-color: var(--glass-b); padding-top: env(safe-area-inset-top, 0px); }
+/* .circle-page #header { background: var(--glass); border-bottom-color: var(--glass-b); padding-top: env(safe-area-inset-top, 0px); }
 .circle-page #header .container { height: 64px; padding: 5px 20px; }
 .circle-page .logo { padding: 5px 10px; color: var(--prim-color); font-family: var(--prim-font); font-weight: 800; font-size: 1.25rem; }
 .circle-page .nav-link { color: var(--txt-norm) !important; padding: 10px 16px; }
@@ -48,7 +48,7 @@
 .circle-page .menu-toggle span { display: block; width: 28px; height: 2px; background: var(--prim-color); border-radius: 30px; transition: .4s; }
 .circle-page .menu-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
 .circle-page .menu-toggle.active span:nth-child(2) { opacity: 0; }
-.circle-page .menu-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+.circle-page .menu-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); } */
 
 /* Hero khusus lingkaran; elemen navigasi dan reset tetap menggunakan komponen global. */
 .circle-page #home { position: relative; min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 90px 20px 40px; overflow: hidden; }
@@ -194,3 +194,55 @@
   /* width: 80%; */
   border-radius: 12px;
 }
+
+/* Style untuk Modal Pop-up */
+.modal-overlay {
+  position: fixed; /* Tetap di posisi yang sama bahkan saat di-scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Latar belakang gelap transparan */
+  display: none; /* Awalnya disembunyikan */
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Pastikan di atas semua elemen lain */
+}
+
+.modal-content {
+  background-color: white;
+  width: 90%;
+  height: 85%;
+  max-width: 1000px; /* Lebar maksimum modal */
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  position: relative; /* Diperlukan untuk posisi tombol close */
+  padding: 15px; /* Beri sedikit ruang di sekitar iframe */
+  display: flex; /* Untuk membuat iframe mengisi ruang */
+  position: relative;
+  top: 2em;
+}
+
+.close-button {
+  position: absolute;
+  top: -15px; /* Posisikan sedikit di luar atas */
+  right: -15px; /* Posisikan sedikit di luar kanan */
+  background-color: white;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Membuatnya bulat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  line-height: 1;
+}
+
+.close-button:hover {
+  background-color: #f0f0f0;
+}
+
